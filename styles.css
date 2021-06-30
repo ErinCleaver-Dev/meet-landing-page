@@ -289,13 +289,12 @@ footer p {
 }
 @media only screen and (min-width: 1238px) {
     .hero {
-        max-height: 400px;
+        justify-content: space-between
     }
     .middle-hero { 
         order: 1;
         flex: 1.5;
-        margin-left: 3em;
-        margin-right: 3em;
+        max-width: 400px;
     }
     .left-hero {
         min-width: 350px;
@@ -314,7 +313,7 @@ footer p {
         min-height: 300px;
         order: 3;
         flex: 1;
-        background-position: 6em;
+        background-position: 11em;
 
 
     }
