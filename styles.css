@@ -37,12 +37,11 @@ header img {
     background-image: url(./assets/desktop/image-hero-left.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: -30px;
+    background-position: -2em;
     order: 1;
     flex: 1;    
+    max-width: 300px;
     min-width: 100px;
-    min-height: 200px;
-
 }
 
 .right-hero {
@@ -52,9 +51,10 @@ header img {
     background-size: contain;
     flex: 1;
     order: 2;
+    max-width: 300px;
     min-width: 100px;
     min-height: 200px;
-    background-position: 10px;
+    background-position: 2em;
 }
 
 
@@ -226,14 +226,14 @@ footer p {
     line-height: 26px;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 959px) {
+@media only screen and (min-width: 630px) and (max-width: 1237px) {
     
    
     .left-hero {
         max-width: 800px;
         min-width: 300px;
         max-height: 600px;
-        min-height: 300px;
+        min-height: 400px;
         background-size: contain;
         background-position: -70px;
 
@@ -242,7 +242,7 @@ footer p {
         max-width: 800px;
         min-width: 300px;
         max-height: 600px;
-        min-height: 300px;
+        min-height: 400px;
         background-size: contain;
         background-position: 70px;
     }
@@ -287,32 +287,36 @@ footer p {
     }
 
 }
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1238px) {
     .hero {
         max-height: 400px;
-        justify-content: space-between;
     }
     .middle-hero { 
         order: 1;
         flex: 1.5;
-        max-width: 400px;
+        margin-left: 3em;
+        margin-right: 3em;
     }
     .left-hero {
-        min-width: 200px;
-        max-width: 300px;
+        min-width: 350px;
+        max-width: 500px;
         max-height: none;
+        min-height: 300px;
         order: 1;
         flex: 1;
-        min-height: 300px;
+        background-position: -4em;
 
     }
     .right-hero {
-        min-width: 200px;
-        max-width: 300px;
+        min-width: 350px;
+        max-width: 500px;
         max-height: none;
         min-height: 300px;
         order: 3;
         flex: 1;
+        background-position: 6em;
+
+
     }
     footer::before {
         top: 0px;
@@ -329,9 +333,10 @@ footer p {
         background-image: url(./assets/desktop/image-footer.jpg);
         background-size: cover;
         background-repeat: none;
-        background-position: none;
+        background-position: 100%;
         flex-direction: row;
         text-align: left;
+        height: 300px;
         padding: 50px 100px;
     }
 }
